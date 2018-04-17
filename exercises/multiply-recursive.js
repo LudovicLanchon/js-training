@@ -10,6 +10,15 @@
  */
 
 // Your code :
+function multiply(number1, number2) {
+  if (number1 == 0 || number2 == 0) {
+    return 0;
+  }
+  if (number2 < 0) {
+    return multiply(number1, number2 + 1) - number1;
+  }
+  return multiply(number1, number2 - 1) + number1;
+}
 
 //* Begin of tests
 const assert = require('assert')

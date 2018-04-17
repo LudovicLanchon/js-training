@@ -5,7 +5,9 @@
  * and transform to upper case only the first letter
  *
  */
-
+function capitalize(string) {
+  return string.substr(0, 1).toUpperCase() + string.substr(1).toLowerCase();
+}
 //* Begin of tests
 const assert = require('assert')
 
